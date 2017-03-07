@@ -1,5 +1,6 @@
-from __future__ import print_function
+# -*- coding:utf-8 -*-
 
+from __future__ import print_function
 import random
 
 
@@ -19,7 +20,7 @@ def guss_num(num):
             print("===========================")
 	    break
 
-def play_again():
+def play_game():
     main()
     while True:
         res = raw_input("Do you want to play again,pls input yes or no:")
@@ -35,5 +36,5 @@ def main():
     guss_num(num)
 
 if __name__ == "__main__":
-     play_again()
+     play_game()
 
