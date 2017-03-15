@@ -6,29 +6,33 @@ import random
 
 def guss_num(num):
     while True:
-	try:
-      	    value = int(raw_input("pls input your number:"))
- 	except ValueError , e:
-	    print(e)
-	    continue
-	if ( value > num ):
-	    print("the number is less the you input")
-	elif (value < num ):
-	    print("the number is lager the you input")
-	else:
-	    print("you are great!")
+        try:
+            input_num = int(raw_input("pls input your number:"))
+        except ValueError , e:
+            print(e)
+        if  input_num > num :
+            print("the number is less the you input")
+        elif input_num < num :
+            print("the number is lager the you input")
+        else:
+            print("you are great!")
             print("===========================")
-	    break
+            break
+
 
 def play_game():
+    """
+    begin play game
+    """
     main()
     while True:
         res = raw_input("Do you want to play again,pls input yes or no:")
         if  res in ("y","yes"):
             main()
         else:
-	    print("========bye bye=========")
-	    break
+            print("========bye bye=========")
+            break
+
 	    
 def main():
     print("=======paly game=======")
@@ -36,5 +40,7 @@ def main():
     guss_num(num)
 
 if __name__ == "__main__":
-     play_game()
+    play_game()
+
+
 
