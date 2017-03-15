@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*- 
+from __future__ import  print_function
 
 """ 字符串是字符的有序集合，
 并且不可以改变，可以使用单引号，双引号，三引号来定义"""
